@@ -16,7 +16,7 @@ Ask one question: (exampleOne.js)
 ```js
 var questions = require('questions');
 
-questions.askOne({ info:'Enter your name' }, function(result){
+questions.askOne({ info:'Enter your name' }, "John", function(result){
   console.log('You name is '+result);
 })
 ```
@@ -38,7 +38,9 @@ questions.askMany({
 	name: { info:'Name'},
 	age: { info:'Age'},
 	phone: { info:'Phone', required: false },
-}, function(result){
+}, {
+  name: "Carlo"
+  }, function(result){
 	console.log(result);
 })
 ```
