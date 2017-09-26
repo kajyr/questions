@@ -22,7 +22,7 @@ questions.askOne({ info:'Enter your name', default:"John" }, function(result){
 ```
 
 ```bash
-$ node exampleOne.js 
+$ node exampleOne.js
   Enter your name: Hugo
   You name is Hugo
 
@@ -35,16 +35,16 @@ Ask multiple questions: (exampleMany.js)
 var questions = require('questions');
 
 questions.askMany({
-	name: { info:'Name', default:"Carlo" },
-	age: { info:'Age'},
-	phone: { info:'Phone', required: false },
+  name: { info:'Name', default:"Carlo" },
+  age: { info:'Age'},
+  phone: { info:'Phone', required: false },
 }, function(result){
-	console.log(result);
+  console.log(result);
 })
 ```
 
 ```bash
-$ node exampleMany.js 
+$ node exampleMany.js
   Name: Hugo
   Age: 28
   (Optional) Phone: 00351930000000
@@ -53,7 +53,7 @@ $ node exampleMany.js
 
 
 ---
-## License 
+## License
 
 (The MIT License)
 
