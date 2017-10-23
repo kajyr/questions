@@ -3,11 +3,9 @@ var questions = require('./questions.js');
 
 
 questions.askMany({
-	name: { info:'Name'},
+	name: { info:'Name', default:"Carlo" },
 	age: { info:'Age'},
 	phone: { info:'Phone', required:false },
-}, {
-	name: "Carlo"
 }, function(result){
 	console.log(result);
 })

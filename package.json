@@ -11,5 +11,5 @@
   "keywords": ["terminal", "console", "interactive", "stdin",  "questions", "cli"],
   "main": "./questions.js",
   "dependencies": {
-  }  
+  }
 }
